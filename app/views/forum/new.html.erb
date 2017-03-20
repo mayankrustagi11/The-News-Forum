@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<pre id="top">
+<%= link_to " Login as Admin.", 'Admin' %>          
+</pre>
+<br>
+
+<h1 id="h1">The News Forum</h1>
+<%= form_for :forum do |f| %>
+<br>
+
+<div id="label">
+<p>
+<%= f.label :Username,'Username:' %><br><br>
+<%= f.label :Password,'New Password:' %><br><br>
+<%= f.label :CPassword,'Confirm Password:' %><br><br>
+<%= f.label :First_Name,'First Name:' %><br><br>
+<%= f.label :Last_Name,'Last Name:' %><br><br>
+<%= f.label :Gender,'Gender: ' %><br><br>
+<%= f.label :Email,'E-mail:' %><br><br>
+<%= f.label :Mobile,'Mobile:' %><br><br>
+</p>
+
+<div id="btn">
+<p>
+<%= f.submit "Sign Up" %>
+</p>
+</div>
+
+</div>
+
+
+<div id="text">
+<p>
+<%= f.text_field :Username %><br><br>
+<%= f.password_field :Password %><br><br>
+<%= f.password_field :CPassword %><br><br>
+<%= f.text_field :First_Name %><br><br>
+<%= f.text_field :Last_Name %><br><br>
+<%= f.radio_button :Gender,'Male' %> Male  
+<%= f.radio_button :Gender,'Female' %> Female <br><br>
+<%= f.text_field :Email %><br><br>
+<%= f.text_field :Mobile %><br>
+</p>
+<br>
+<%= link_to "Already Have An Account? Sign In", 'login' %>
+</div>
+
+<% end %>
+
+

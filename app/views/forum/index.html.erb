@@ -1,0 +1,22 @@
+<h1>Listing forum</h1>
+<table>
+<tr>
+<th> First Name </th>
+<th> Last Name </th>
+<th> Gender </th>
+<th> E-mail </th>
+<th> Mobile </th>
+</tr>
+
+<%@object.each do|forum|%>
+<tr>
+<td><%= object.First_Name %></td>
+<td><%= object.Last_Name %></td>
+<td><%= object.Gender %><td>
+<td><%= object.Email %></td>
+<td><%= object.Mobile %></td>
+
+</tr>
+<%end%>
+</table>
+

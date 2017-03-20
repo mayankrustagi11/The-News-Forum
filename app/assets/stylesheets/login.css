@@ -1,0 +1,18 @@
+
+#top {text-align: right; font-family:Century Gothic; font-size:130%; margin-top:-5%; height:40%;border-color:black;}
+
+#h11 {text-align: center; font-family:Century Gothic; font-size:350%; color:Red; margin-top:-1%;}
+
+div#SignIn { float:left; position: relative; top:30%; left:10%; width:40%; font-family:Century Gothic;font-size:140%; color:blue;}
+
+#h2 {color:Red;font-size:175%;}
+
+div#SignUp { float:left; position: relative; top:30%; left:10%; font-family:Century Gothic; font-size:135%;}
+
+#h22 {color:Red;font-size:175%;}
+
+#ins { font-family:Century Gothic; border-color:white; background-color: white;font-size:100%; width:100%;}
+ 
+div#btn {color:black;}
+div#txt1 {color:black;}
+div#txt2 {color:black;}

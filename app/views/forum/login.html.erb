@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<pre id="top">
+
+<%= link_to " Login as Admin.", 'Admin' %>          
+</pre>
+<br>
+<h1 id="h11">The News Forum</h1>
+<br>
+<div id="SignIn">
+<%= form_for :forum do |f| %>
+
+<h2 id="h2">Log In</h2><br>
+<p>
+<%= f.label :Username,'Username:' %><br>
+<div id="txt1">
+<%= f.text_field :Username %>
+</div>
+</p>
+
+<p>
+<%= f.label :Password,'Password:' %><br>
+<div id="txt2">
+<%= f.password_field :Password %>
+</div>
+</p>
+
+<div id="btn">
+<p>
+<%= f.submit "Sign In " %><br>
+</p>
+</div>
+<br>
+<%= link_to "Forgotten Password Or Username ?", 'forgetpassword' %>
+</div>
+
+<div id="SignUp">
+<h2 id="h22">Is This Your First Time Here ?</h2>
+
+<p>
+<pre id="ins">
+Hi! For full access you'll need to take a minute to create a new account
+for yourself on this website.
+All the participants are requested to create a fresh login for the News Forum. 
+
+Here are all the Steps :
+
+1. Fill out the New Account form with your details.
+2. An email will be immediately sent to your email address.
+3. Read your email, and click on the web link it contains.
+4. Your account will be confirmed and you will be logged in.
+5. Use your ncuindia.edu email Id to create the login.
+</pre>
+</p>
+
+<%= link_to "New User ? Register Here.", 'new' %>
+</div>
+<% end %>
+
+

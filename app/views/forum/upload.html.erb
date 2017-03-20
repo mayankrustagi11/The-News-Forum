@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<pre id="top">
+
+<%= link_to " Logout", 'login' %>          
+</pre>
+<br>
+
+<h1 id="h1">The News Forum</h1>
+<br>
+<div id="upload">
+<%= form_for :forum do |f| %>
+<h2 id="h2"> Upload Article </h2><br>
+<p>
+<%= f.label :text, 'Enter here:' %><br>
+<div id="txt">
+<%= f.text_area :text, :rows => 10, :cols => 65, :maxlength => 500 %><br>
+</p>
+
+<p>
+<%= f.submit %><br>
+</p>
+</div>
+
+</div>
+<% end %>

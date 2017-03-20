@@ -1,0 +1,10 @@
+
+#top {text-align: right; font-family:Century Gothic; font-size:130%; margin-top:-5%; height:40%; background-color: white; border-color:black;}
+
+#h1 {text-align: center; font-family:Century Gothic; font-size:350%; color:Red; margin-top:-1%;}
+
+div#label { float:left; position: relative; left:10%; width:20%; font-family:Century Gothic; font-size:140%; color:blue;}
+
+div#text {float:left; position: relative; left:10%; font-family:Century Gothic; font-size:140%;}
+
+div#btn  {color:black; }
