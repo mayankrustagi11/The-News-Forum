@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<pre id="top">
+
+<%= link_to "Home", 'home',:class=> "links" %>     <%= link_to "General Notices", 'generalnotices',:class=> "links" %>     <%= link_to "Sports News", 'sports',:class=> "links" %>     <%= link_to " Contact Us", 'contactus',:class=> "links" %>     <%= link_to "Logout",'login',:class=> "links" %>
+</pre>
+<br>
+<div id="ha">The News Forum</div>
+<br><br>
+<div id="hb">Extra Curricular</div>
+<br>
+
+<table id="table">
+
+<tr>
+<th colspan="6">Title</th>
+<th colspan="6">Date</th>
+<th colspan="12">Text</th>
+</tr>
+
+<% @object.each do|f| %>
+
+<tr>
+<td colspan="6"><%= f.title %></td>
+<td colspan="6"><%= f.date %></td>
+<td colspan="12"><%= f.text %></td>
+</tr>
+
+<% end %>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<<html>
+<body>
+<pre id="top">
+
+<%= link_to "<< Back", 'adminhome',:class=> "links" %>     <%= link_to "Home", 'adminhome',:class=> "links" %>     <%= link_to "Logout", 'Admin',:class=> "links" %>
+</pre>
+<br>
+<div id="h1">The News Forum</div>
+<br><br>
+
+<%= form_for (@object),url: {action: "deletionsuccess"} do |f| %>
+<p>
+<div id="lbl">
+<%= f.label :id,'Select the Title:' %>
+</div>
+</p>
+
+<div id="select">
+<p>
+<%= f.collection_select :title, Notice.all, :id, :collection_select_data, {prompt:true}  %>
+</p>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>
+<div id="submit">
+<%= f.submit "Submit" %>
+</div>
+</p>
+
+
+<br><br>
+
+<% end %>
+
+</body>
+</html>

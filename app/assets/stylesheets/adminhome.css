@@ -1,0 +1,32 @@
+#top {text-align:right; font-family:Century Gothic; font-size:130%; margin-top:-5%; border-color:white; background-color:#000000;}
+
+.links {color:#FFFFFF; padding:5px;} 
+.links:hover {background-color:#FFFFFF; text-decoration:none; font-weight:bold; color:#000000;}
+
+body {background-color:#A4C0F4;}
+
+#h1 {text-align: center; font-family:Canturbury; font-size:350%; color:Red; margin-top:-1%;}
+
+div#btnset1 {text-align:center; width:100%;}
+
+div#btnset2 {text-align:center; width:100%;}
+
+.btn1 {left:28%; float:left; position:relative; font-family:Century Gothic; color:black; height:160px; width:330px; font-size:240%; background-color:black; color:white; border-radius:15px;}
+
+.btn2 {left:29.5%; float:left; position:relative; font-family:Century Gothic; color:black; height:160px; width:330px; font-size:240%; background-color:black; color:white; border-radius:15px;}
+
+.btn3 {left:28%; float:left; position:relative; font-family:Century Gothic; color:black; height:160px; width:330px; font-size:240%; background-color:black; color:white;  border-radius:15px;}
+
+.btn4 {left:29.5%; float:left; position:relative; font-family:Century Gothic; color:black; height:160px; width:330px; font-size:240%; background-color:black; color:white;  border-radius:15px;}
+
+
+@font-face {
+  font-family: 'Canterbury';
+  src:url('Canterbury.eot');
+  src:url('Canterbury.eot?#iefix') format('embedded-opentype'),
+    url('Canterbury.svg#Canterbury') format('svg'),
+    url('Canterbury.woff') format('woff'),
+    url('Canterbury.ttf') format('truetype');
+  font-weight: normal;
+  
+}

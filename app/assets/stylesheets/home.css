@@ -1,0 +1,25 @@
+#top1 {text-align:right; margin-top:-5%; height:40%;border-color:black; background-image: url('/assets/newz.jpg'); font-family:Century Gothic; font-size:145%; margin-bottom:-2%;}
+
+.link {color:#000000; padding:5px;} 
+.link:hover {text-decoration:none; font-weight:bold; color:#000000; }
+
+body {background-color:#A4C0F4;}
+
+div#h11 {text-align:center; font-family:Canterbury; font-size:800%; color:Red; margin-top:-1%; }
+
+#txt1 {text-align:center; font-family:Century Gothic; font-size:220%; background:none; border:none; margin-top:-1%;}
+
+#social {background-color:black; border-color:black; color:white; font-family:Century Gothic; font-size:130%;}
+
+div#cc {text-align:center; font-family:Century Gothic; font-size:140%;  background-color:gray;margin-top:-0.5%; font-weight:bold; margin-bottom:-3%; }
+
+@font-face {
+  font-family: 'Canterbury';
+  src:url('Canterbury.eot');
+  src:url('Canterbury.eot?#iefix') format('embedded-opentype'),
+    url('Canterbury.svg#Canterbury') format('svg'),
+    url('Canterbury.woff') format('woff'),
+    url('Canterbury.ttf') format('truetype');
+  font-weight: normal;
+  
+}

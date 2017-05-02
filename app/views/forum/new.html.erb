@@ -1,23 +1,26 @@
 <!DOCTYPE html>
+<html>
+<body>
 <pre id="top">
-<%= link_to " Login as Admin.", 'Admin' %>          
+
+<%= link_to "Login", 'login',:class=> "links" %>     <%= link_to "Admin Login", 'Admin',:class=> "links" %>     <%= link_to "Contact Us", 'contactus',:class=> "links" %>
 </pre>
 <br>
 
-<h1 id="h1">The News Forum</h1>
-<%= form_for :forum do |f| %>
+<div id="h1">The News Forum</div>
+<%= form_for (@object), url: {action: "create"}  do |f| %>
 <br>
 
-<div id="label">
+<div id="labels">
 <p>
-<%= f.label :Username,'Username:' %><br><br>
-<%= f.label :Password,'New Password:' %><br><br>
-<%= f.label :CPassword,'Confirm Password:' %><br><br>
-<%= f.label :First_Name,'First Name:' %><br><br>
-<%= f.label :Last_Name,'Last Name:' %><br><br>
-<%= f.label :Gender,'Gender: ' %><br><br>
-<%= f.label :Email,'E-mail:' %><br><br>
-<%= f.label :Mobile,'Mobile:' %><br><br>
+<%= f.label :Username,'Username:' %><br>
+<%= f.label :Password,'New Password:' %><br>
+<%= label_tag :Password_Confirmation,'Confirm Password:' %><br>
+<%= f.label :First_Name,'First Name:' %><br>
+<%= f.label :Last_Name,'Last Name:' %><br>
+<%= f.label :Gender,'Gender: ' %><br>
+<%= f.label :Email,'E-mail:' %><br>
+<%= f.label :Mobile,'Mobile:' %><br>
 </p>
 
 <div id="btn">
@@ -29,17 +32,17 @@
 </div>
 
 
-<div id="text">
+<div id="txtfld">
 <p>
-<%= f.text_field :Username %><br><br>
+<%= f.text_field :Username,:autocomplete=> :off %><br><br>
 <%= f.password_field :Password %><br><br>
-<%= f.password_field :CPassword %><br><br>
-<%= f.text_field :First_Name %><br><br>
-<%= f.text_field :Last_Name %><br><br>
+<%= password_field_tag :Password_Confirmation %><br><br>
+<%= f.text_field :First_Name,:autocomplete=> :off  %><br><br>
+<%= f.text_field :Last_Name,:autocomplete=> :off  %><br><br>
 <%= f.radio_button :Gender,'Male' %> Male  
 <%= f.radio_button :Gender,'Female' %> Female <br><br>
-<%= f.text_field :Email %><br><br>
-<%= f.text_field :Mobile %><br>
+<%= f.text_field :Email,:autocomplete=> :off  %><br><br>
+<%= f.text_field :Mobile,:autocomplete=> :off  %><br>
 </p>
 <br>
 <%= link_to "Already Have An Account? Sign In", 'login' %>
@@ -47,4 +50,5 @@
 
 <% end %>
 
-
+</body>
+</html>

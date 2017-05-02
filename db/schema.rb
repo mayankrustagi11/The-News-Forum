@@ -10,24 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170318134334) do
+ActiveRecord::Schema.define(version: 20170426044532) do
 
   create_table "admins", force: :cascade do |t|
-    t.string   "admminid"
+    t.string   "adminid"
+    t.string   "password"
     t.string   "fname"
     t.string   "lname"
-    t.string   "password"
+    t.datetime "lastlogin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "forums", force: :cascade do |t|
+  create_table "notices", force: :cascade do |t|
+    t.string   "adminid"
+    t.text     "title"
+    t.datetime "date"
+    t.datetime "expiry"
+    t.text     "text"
+    t.text     "newstype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
     t.string   "Username"
     t.string   "Password"
-    t.string   "CPassword"
     t.string   "First_Name"
     t.string   "Last_Name"
-    t.boolean  "Gender"
+    t.string   "Gender"
     t.string   "Email"
     t.string   "Mobile"
     t.datetime "created_at", null: false

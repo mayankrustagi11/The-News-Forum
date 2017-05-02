@@ -1,0 +1,24 @@
+#top {text-align:right; font-family:Century Gothic; font-size:130%; margin-top:-5%; border-color:white; background-color:#000000;}
+
+.links {color:#FFFFFF; padding:5px;} 
+.links:hover {background-color:#FFFFFF; text-decoration:none; font-weight:bold; color:#000000;}
+
+body {background-color:#A4C0F4;}
+
+#h1 {text-align:center; font-family:Canturbury; font-size:300%; color:Red; margin-top:-1%;}
+
+div#lbl {left: 10%; float:left; position:relative; color:#00008B; font-size:220%; margin-bottom:-2%; margin-top:0.5%}
+div#submit {left:22%; position:relative; color:black; font-size:150%; margin-top:5%; font-family:Century Gothic; width:10%;}
+
+div#select {left:18%; float:left; position:relative; font-family:Century Gothic; font-size:200%; color:#FFA500; border-color:black; text-align:center; }
+
+@font-face {
+  font-family: 'Canterbury';
+  src:url('Canterbury.eot');
+  src:url('Canterbury.eot?#iefix') format('embedded-opentype'),
+    url('Canterbury.svg#Canterbury') format('svg'),
+    url('Canterbury.woff') format('woff'),
+    url('Canterbury.ttf') format('truetype');
+  font-weight: normal;
+  
+}

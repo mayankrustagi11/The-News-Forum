@@ -1,25 +1,38 @@
 <!DOCTYPE html>
+<html>
+<body>
 <pre id="top">
 
-<%= link_to " Logout", 'login' %>          
+<%= link_to "<< Back", 'adminhome',:class=> "links" %>     <%= link_to "Home", 'adminhome',:class=> "links" %>     <%= link_to "Logout", 'Admin',:class=> "links" %>
 </pre>
 <br>
-
-<h1 id="h1">The News Forum</h1>
-<br>
+<div id="head">The News Forum</div>
+<br><br>
 <div id="upload">
-<%= form_for :forum do |f| %>
-<h2 id="h2"> Upload Article </h2><br>
+<%= form_for (@object),url: {action: "uploadsuccess"}  do |f| %>
+<div id="label">
 <p>
-<%= f.label :text, 'Enter here:' %><br>
-<div id="txt">
-<%= f.text_area :text, :rows => 10, :cols => 65, :maxlength => 500 %><br>
-</p>
-
-<p>
-<%= f.submit %><br>
+<%= f.label :adminid, 'Admin Id',:class=>'lbl' %><br>
+<%= f.label :title, 'Title',:class=>'lbl2' %><br>
+<%= f.label :newstype , 'Category',:class=>'lbl5' %><br>
 </p>
 </div>
-
+<div id="textfields">
+<%= f.text_field :adminid, :maxlength => 20 %><br><br>
+<%= f.text_field :title, :maxlength => 20 %><br><br>
+<div id="option">
+<%= f.select :newstype,[["General Notices","General Notices"],["Extra Curricular","Extra Curricular"],["Sports","Sports"]], prompt:"Please Select",:class=>"select" %><br><br>
 </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id="txtarea">
+<br>
+<%= f.text_area :text, :rows => 10, :cols => 60, :maxlength => 500,:placeholder => "   Enter Your Text Here..." %><br>
+</div>
+<br>
+<%= f.submit "Upload",:class=>"submit" %>
 <% end %>
+
+</body>
+</html>

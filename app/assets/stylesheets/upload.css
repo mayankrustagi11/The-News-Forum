@@ -1,8 +1,41 @@
+#top {text-align:right; font-family:Century Gothic; font-size:130%; margin-top:-5%; border-color:white; background-color:#000000;}
 
-#top {text-align: right; font-family:Century Gothic; font-size:130%; margin-top:-5%; height:40%; background-color: white; border-color:black;}
+.links {color:#FFFFFF; padding:5px;} 
+.links:hover {background-color:#FFFFFF; text-decoration:none; font-weight:bold; color:#000000;}
 
-#h1 {text-align: center; font-family:Century Gothic; font-size:350%; color:Red; margin-top:-1%;}
+body {  }
 
-div#upload { float:left; position: relative; left:10%; width:20%; font-family:Century Gothic; font-size:140%; color:blue;}
+#head {text-align: center; font-family:Canterbury; font-size:750%; color:Red; margin-top:-1%;}
 
-div#txt  {color:black; }
+div#upload { float:left; position: relative; left:10%; width:35%; font-family:Century Gothic; font-size:140%; color:black;}
+
+div#txtarea {left:10%; position:relative; text-align:left; color:black; width:30%; margin-top:-2%; font-family:Century Gothic; font-size:200%  }
+
+.submit {left:15%; font-size:150%; position:relative; font-family:Century Gothic; color:#000000; width:10%; margin-bottom:2%;}
+
+select {border:none;}
+
+div#label { float:left; position: relative; left:2%; width:32%; font-family:Century Gothic; font-size:130%; color:blue; margin-bottom:2%;}
+
+div#textfields {float:left; position: relative; left:10%; font-family:Century Gothic; font-size:120%; margin-bottom:-3%; color:black; width:60%;}
+
+div#option {float:left; position: relative; font-family:Century Gothic; font-size:120%; margin-bottom:1%;}
+.select {border-width:10px;}
+
+.lbl1 { margin-bottom:15%; margin-top:2%;}
+.lbl2 { margin-bottom:15%; margin-top:10%;}
+.lbl3 { margin-bottom:15%;}
+.lbl4 { margin-bottom:15%;}
+.lbl5 { margin-bottom:4%;}
+
+@font-face {
+  font-family: 'Canterbury';
+  src:url('Canterbury.eot');
+  src:url('Canterbury.eot?#iefix') format('embedded-opentype'),
+    url('Canterbury.svg#Canterbury') format('svg'),
+    url('Canterbury.woff') format('woff'),
+    url('Canterbury.ttf') format('truetype');
+    url('Canterbury.ttf') format('truetype');
+  font-weight: normal;
+  
+}

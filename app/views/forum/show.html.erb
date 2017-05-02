@@ -1,26 +1,46 @@
-<h2> Profile.... </h2><br><br>
-<%= image_tag("logo.png") %><br>
-<p>
-<strong>First Name:</strong>
-<%= @object.First_Name %>
-</p>
+<!DOCTYPE html>
+<html>
+<body>
+<pre id="top">
 
-<p>
-<strong>Last Name:</strong>
-<%= @object.Last_Name %>
-</p>
+<%= link_to "Home", 'home',:class=> "links" %>     <%= link_to " Contact Us", 'contactus',:class=> "links" %>     <%= link_to "Logout",'login',:class=> "links" %>
+</pre>
+<div id="h1">The News Forum</div>
+<br>
+<pre id="sp1">
 
-<p>
-<strong>Gender:</strong>
-<%= @object.Gender %>
-</p>
+</pre>
+<pre id="image1">
+<%= link_to image_tag("generalnotices.png"), 'generalnotices' %>
+</pre>
+<pre id="sp2">
 
-<p>
-<strong>Mobile:</strong>
-<%= @object.Mobile %>
-</p>
+</pre>
+<pre id="image2">
+<%= link_to image_tag("extracurricular.png"), 'extracurricular' %>
+</pre>
+<pre id="sp3">
 
-<p>
-<strong>E-mail:</strong>
-<%= @object.Email %>
-</p>
+</pre>
+<pre id="image3">
+<%= link_to image_tag("sports.png"), 'sports' %>
+</pre>
+<pre id="sp4">
+
+</pre>
+<br><br><br><br>
+<pre id="txt0">
+    General Notices                       Extra Curricular                           Sports News
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<pre id="social">
+Follow Us
+
+<%= link_to image_tag("fb.jpg"), "http://www.facebook.com" %>     <%= link_to image_tag("twitter.jpg"), "http://www.twitter.com" %>     <%= link_to image_tag("pinterest.jpg"), "http://www.pinterest.com" %>     <%= link_to image_tag("google.jpeg"), "http://plus.google.com" %> 
+
+</pre>
+<div id="cc">
+Copyright@2017
+</div>
+</body>
+</html>

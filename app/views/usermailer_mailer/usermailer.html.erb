@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta context='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body background="C:\Sites\newsforum\app\assets\images/smallbody.jpg">
+<h1> <font face="Century Gothic" size="130%" color="Red"> Welcome to The News Forum</font></h1>
+<pre id="txtmail">
+<font face="Century Gothic" size="40%">
+<p>
+Dear <%= @object.First_Name %>, 
+You have successfully signed up to The News Forum. Thanks for registering with the new id.
+The News Forum provides you a platform to exchange information.
+</p>
+<p>
+To be able to successfully access your acccount, you must first confirm your e-mail id. 
+To complete the set-up click on the link below to confirm the email address associated with the your account.
+The link shall expire in 24 hours, so please confirm as soon as possible.
+<%= link_to 'Confirm E-mail', " ",:class=>'email' %>
+</p>
+<p>
+For any queries relating to your account, please e-mail us on <font color="#FFA500">itsthenewsforum@gmail.com </font>
+</p>
+</p>
+</font>
+</pre>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<pre id="top">
+
+<%= link_to " Contact Us", 'contactus',:class=> "links" %>     <%= link_to "Logout",'login',:class=> "links" %>
+</pre>
+<br>
+<div id="h1">The News Forum</div>
+<br><br>
+<div id="btnset1">
+<%= button_to "Upload Article", 'upload',:class=>"btn1" %>  <%= button_to "View Articles", 'show',:class=>"btn2" %> 
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div id="btnset2">
+<%= button_to "Delete Article", 'delete',:class=>"btn3" %>   <%= button_to "View Users", 'users',:class=>"btn4" %>
+</div>
+</body>
+</html>

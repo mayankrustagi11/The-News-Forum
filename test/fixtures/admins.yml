@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  admminid: MyString
+  adminid: MyString
+  password: MyString
   fname: MyString
   lname: MyString
-  password: MyString
+  lastlogin: 2017-04-20 11:37:54
 
 two:
-  admminid: MyString
+  adminid: MyString
+  password: MyString
   fname: MyString
   lname: MyString
-  password: MyString
+  lastlogin: 2017-04-20 11:37:54

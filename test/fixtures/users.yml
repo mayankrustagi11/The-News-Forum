@@ -3,19 +3,17 @@
 one:
   Username: MyString
   Password: MyString
-  CPassword: MyString
   First_Name: MyString
   Last_Name: MyString
-  Gender: false
+  Gender: MyString
   Email: MyString
   Mobile: MyString
 
 two:
   Username: MyString
   Password: MyString
-  CPassword: MyString
   First_Name: MyString
   Last_Name: MyString
-  Gender: false
+  Gender: MyString
   Email: MyString
   Mobile: MyString

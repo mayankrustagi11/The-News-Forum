@@ -1,18 +1,35 @@
+#top {text-align:right; font-family:Century Gothic; font-size:130%; margin-top:-5%; border-color:white; background-color:#000000;}
 
-#top {text-align: right; font-family:Century Gothic; font-size:130%; margin-top:-5%; height:40%;border-color:black;}
+.links {color:#FFFFFF; padding:5px;} 
+.links:hover {background-color:#FFFFFF; text-decoration:none; font-weight:bold; color:#000000;}
 
-#h11 {text-align: center; font-family:Century Gothic; font-size:350%; color:Red; margin-top:-1%;}
+body { background-image: url('/assets/smallbody.jpg'); }
 
-div#SignIn { float:left; position: relative; top:30%; left:10%; width:40%; font-family:Century Gothic;font-size:140%; color:blue;}
+#h1 {text-align: center; font-family:Canturbury; font-size:300%; color:Red; margin-top:1%; margin-bottom:1%; }
 
-#h2 {color:Red;font-size:175%;}
+div#SignIn { float:left; position: relative; left:10%; width:40%; font-family:Century Gothic;font-size:140%; margin-top:-2%; }
 
-div#SignUp { float:left; position: relative; top:30%; left:10%; font-family:Century Gothic; font-size:135%;}
+#h2 {color:Red;font-size:170%;}
 
-#h22 {color:Red;font-size:175%;}
+div#SignUp { float:left; position: relative; top:30%; left:10%; font-family:Century Gothic; font-size:135%; margin-top:-1%;}
 
-#ins { font-family:Century Gothic; border-color:white; background-color: white;font-size:100%; width:100%;}
+#ins { font-family:Century Gothic; border:none;  font-size:100%; width:100%; background:none; margin-top:3%; }
+
+#h22 {color:Red;font-size:200%;}
  
-div#btn {color:black;}
-div#txt1 {color:black;}
-div#txt2 {color:black;}
+div#btnlog {left:7%; position:relative; color:#000000; font-size:110%; margin-top:-2%; }
+div#txtuser {color:#000000;}
+div#txtpass {color:#000000;}
+
+div#l1 {margin-bottom:-9%; font-size:130%; color:#337ab7; margin-top:3%; }
+div#l2 {margin-bottom:-9%; font-size:130%; color:#337ab7; margin-top:0%; }
+
+@font-face {
+  font-family: 'Canterbury';
+  src:url('Canterbury.eot');
+  src:url('Canterbury.eot?#iefix') format('embedded-opentype'),
+    url('Canterbury.svg#Canterbury') format('svg'),
+    url('Canterbury.woff') format('woff'),
+    url('Canterbury.ttf') format('truetype');
+  font-weight: normal;
+}

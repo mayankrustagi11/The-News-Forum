@@ -1,45 +1,48 @@
 <!DOCTYPE html>
+<html>
+<body>
 <pre id="top">
 
-<%= link_to " Login as Admin.", 'Admin' %>          
+<%= link_to "New User", 'new',:class=> "links" %>     <%= link_to "Admin Login ", 'Admin',:class=> "links" %>     <%= link_to "Contact Us", 'contactus',:class=> "links" %>
 </pre>
 <br>
-<h1 id="h11">The News Forum</h1>
-<br>
+<div id="h1">The News Forum</div>
+<br><br>
 <div id="SignIn">
-<%= form_for :forum do |f| %>
-
-<h2 id="h2">Log In</h2><br>
+<%= form_for (@object),url: {action: "home"} do |f| %>
+<br>
+<h2 id="h2">Log In</h2>
 <p>
-<%= f.label :Username,'Username:' %><br>
-<div id="txt1">
-<%= f.text_field :Username %>
+<div id="l1">
+<%= f.label :Username,'Username:' %>
+</div>
+<div id="txtuser">
+<%= f.text_field :Username,:autocomplete=> :off %>
 </div>
 </p>
 
 <p>
-<%= f.label :Password,'Password:' %><br>
-<div id="txt2">
+<div id="l2">
+<%= f.label :Password,'Password:' %>
+</div>
+<div id="txtpass">
 <%= f.password_field :Password %>
 </div>
 </p>
-
-<div id="btn">
+<br>
+<div id="btnlog">
 <p>
-<%= f.submit "Sign In " %><br>
+<%= f.submit "Sign In " %>
 </p>
 </div>
 <br>
-<%= link_to "Forgotten Password Or Username ?", 'forgetpassword' %>
+<%= link_to "Forgotten Password Or Username ?", 'forgetpassword',:class=> "fgtpass"  %>
 </div>
-
 <div id="SignUp">
-<h2 id="h22">Is This Your First Time Here ?</h2>
+<h2 id="h22">Is this your first time here ?</h2>
 
 <p>
 <pre id="ins">
-Hi! For full access you'll need to take a minute to create a new account
-for yourself on this website.
 All the participants are requested to create a fresh login for the News Forum. 
 
 Here are all the Steps :
@@ -56,4 +59,5 @@ Here are all the Steps :
 </div>
 <% end %>
 
-
+</body>
+</html>

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-
+<html>
+<body>
 <pre id="top">
 
-<%= link_to " Login as User.", 'login' %>          
+<%= link_to "User Login", 'login',:class=> "links" %>     <%= link_to "New User", 'new',:class=> "links" %>     <%= link_to " Contact Us", 'contactus',:class=> "links" %>
 </pre>
-<br>
-<h1 id="h11">The News Forum</h1>
-<br>
-<%= form_for :admin do |f| %>
+<div id="h1">The News Forum</div>
+<br><br>
+<%= form_for (@object),url: {action: "adminhome"}  do |f| %>
 
 <div id="Signin">
-<h2 id="h2">Log In</h2><br>
+
 <p>
-<%= f.label :Admin_Id,'Admin ID:' %><br>
-<div id="txt1">
-<%= f.text_field :Admin_Id, :cols => 40 %>
+<div id="l1">
+<%= f.label :adminid,'Admin ID:' %>
+</div>
+<div id="txta">
+<%= f.text_field :adminid,:autocomplete=> :off  %>
 </div>
 </p>
 
 <p>
-<%= f.label :Password,'Password:' %><br>
-<div id="txt2">
-<%= f.password_field :Password, :cols => 40 %>
+<div id="l2">
+<%= f.label :password,'Password:' %>
+</div>
+<div id="txtb">
+<%= f.password_field :password%>
 </div>
 </p>
 
@@ -32,3 +36,6 @@
 </p>
 </div>
 <% end %>
+
+</body>
+</html>
